@@ -13,11 +13,17 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+          <link href="css/bootstrap-tagsinput.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 
+      <style> .row {padding-bottom: 20px}
+            hr {border-color:black}
+      </style>
   </head>
 
   <body>
+      
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -88,7 +94,107 @@
 
             
           </div><!--/row-->
+            
+            
+                         <div class="row">
+            <div class="col-xs-12">
+                
+             <div class="form-group">
+  <label class="control-label col-xs-2" for="amount">Description:</label>
+                 <div class="col-xs-10">   
+                   <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" >   
+
+ </div>
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+
+            
+          </div><!--/row-->
+            
+            
+           <div class="row">
+            <div class="col-xs-12">
+                
+             <div class="form-group">
+  <label class="control-label col-xs-2" for="amount">Description:</label>
+                 <div class="col-xs-10">   
+
+                   <select class="form-control"><option>first</option><option>second</option></select>  
+                     
+ </div>
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+
+            
+          </div><!--/row-->
+            
+                   
+                   
+                   
             <hr></hr>
+          
+        <div class="row">
+                            <h2>Chapter 1</h2>             
+
+            <div class="col-xs-12">
+
+             <div class="form-group">
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+<form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+         
+        </form>
+            
+          </div><!--/row-->  
+          
+          
+          
+          
+                  <div class="row">
+                            <h2>Chapter 1</h2>             
+
+            <div class="col-xs-12">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/WTM4s_Y4GY4" frameborder="0" allowfullscreen></iframe>        
+
+            </div><!--/.col-xs-6.col-lg-4-->
+
+          </div><!--/row-->  
+          
+          
+          
+          
+              <div class="row">
+                                                   <h3>Chapter 2</h3>             
+
+            <div class="col-xs-12">
+
+             <div class="form-group">
+
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+<form>
+            <textarea name="editor2" id="editor2" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+         
+        </form>
+            
+          </div><!--/row-->  
+          
+          
+          
+          
+          
+          
+          
+          
         </div><!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
@@ -109,8 +215,34 @@
 
       <hr>
 
-      <footer>
-        <p>&copy; Company 2014</p>
+      <footer style="background-color:black; color:white; padding:10px">
+          <div class="row">
+            <div class="col-xs-6">
+                
+             <div class="form-group">
+Home<br>
+    class<br>
+                 bla<br>
+                 <div class="col-xs-10">   
+
+                     
+ </div>
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+ <div class="col-xs-6">
+                
+             <div class="form-group">
+  <label class="control-label col-xs-2" for="amount">Description:</label>
+                 <div class="col-xs-10">   
+
+                     
+ </div>
+</div>
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+            
+          </div><!--/row-->
       </footer>
 
     </div><!--/.container-->
@@ -124,6 +256,20 @@
 
     <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+        <script src="js/bootstrap-tagsinput.js"></script>
+ <script src="http://cdn.ckeditor.com/4.4.7/basic/ckeditor.js"></script>
+
+            <script>
+
+                CKEDITOR.replace( 'editor1' );
+            </script>
+      
+      <script>
+
+                CKEDITOR.replace( 'editor2' );
+            </script>
+      
+      
    <script>
         $(function() {
     $( "#slider-range" ).slider({
